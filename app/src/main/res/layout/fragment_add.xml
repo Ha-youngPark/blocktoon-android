@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="웹툰 등록"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:background="@drawable/subtitle2"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:fontFamily="@font/dunggeunmo"
+                />
+
+            <EditText
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:background="@drawable/round_corner"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:hint="웹툰 제목"
+                android:padding="7dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/webtoonTitle"
+                android:maxLines="1"
+                android:drawableRight="@drawable/ic_title_black_24dp"
+                android:fontFamily="@font/dunggeunmo"
+                android:inputType="text"
+                android:theme="@style/EditTextStyle"
+                />
+
+            <EditText
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:background="@drawable/round_corner"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:hint="웹툰 썸네일 해시 값"
+                android:padding="7dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/WebThumbHash"
+                android:maxLines="1"
+                android:drawableRight="@drawable/ic_short_text_white_24dp"
+                android:fontFamily="@font/dunggeunmo"
+                android:inputType="text"
+                android:theme="@style/EditTextStyle"/>
+
+            <ImageButton
+                android:id="@+id/Complete"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:src="@drawable/buttons_126"
+                android:background="@drawable/buttons_63"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:padding="15dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="350dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="에피소드 등록"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:background="@drawable/subtitle2"
+                android:fontFamily="@font/dunggeunmo"
+                />
+
+            <EditText
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:background="@drawable/round_corner"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:hint="웹툰 제목"
+                android:padding="7dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+                android:id="@+id/webtoonTitle2"
+                android:maxLines="1"
+                android:drawableRight="@drawable/ic_title_black_24dp"
+                android:fontFamily="@font/dunggeunmo"
+                android:inputType="text"
+                android:theme="@style/EditTextStyle"/>
+
+            <EditText
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:background="@drawable/round_corner"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:hint="에피소드 제목"
+                android:padding="7dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/EpisodeTitle"
+                android:maxLines="1"
+                android:drawableRight="@drawable/ic_title_black_24dp"
+                android:fontFamily="@font/dunggeunmo"
+                android:inputType="text"
+                android:theme="@style/EditTextStyle"/>
+
+            <EditText
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:background="@drawable/round_corner"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:hint="에피소드 썸네일 해시값"
+                android:padding="7dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/EpisodeThumbHash"
+                android:maxLines="1"
+                android:drawableRight="@drawable/ic_short_text_white_24dp"
+                android:fontFamily="@font/dunggeunmo"
+                android:inputType="text"
+                android:theme="@style/EditTextStyle"/>
+
+            <EditText
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:background="@drawable/round_corner"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:hint="웹툰 해시값"
+                android:padding="7dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/WebtoonHash"
+                android:maxLines="1"
+                android:drawableRight="@drawable/ic_short_text_white_24dp"
+                android:fontFamily="@font/dunggeunmo"
+                android:inputType="text"
+                android:theme="@style/EditTextStyle"/>
+
+            <EditText
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:background="@drawable/round_corner"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:hint="가격"
+                android:padding="7dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/cost"
+                android:maxLines="1"
+                android:drawableRight="@drawable/ic_monetization_on_white_24dp"
+                android:fontFamily="@font/dunggeunmo"
+                android:inputType="text"
+                android:theme="@style/EditTextStyle"
+                />
+
+
+            <ImageButton
+                android:id="@+id/Complete2"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:src="@drawable/buttons_126"
+                android:background="@drawable/buttons_63"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:padding="15dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

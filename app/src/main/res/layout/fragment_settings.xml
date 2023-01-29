@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="회원 정보 수정"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/subtitle2"
+        android:fontFamily="@font/dunggeunmo"
+        />
+
+
+        <EditText
+            android:id="@+id/userId"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:hint="아이디"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/round_corner"
+            android:drawableRight="@drawable/ic_face_black_24dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dunggeunmo"
+            android:inputType="text"
+            android:theme="@style/EditTextStyle"
+            />
+
+        <EditText
+            android:id="@+id/password"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:hint="비밀 번호"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_corner"
+            android:drawableRight="@drawable/ic_lock_black_24dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dunggeunmo"
+            android:inputType="text"
+            android:theme="@style/EditTextStyle"
+            />
+
+        <EditText
+            android:id="@+id/accountKey"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:hint="계정키"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_corner"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_vpn_key_black_24dp"
+            android:fontFamily="@font/dunggeunmo"
+            android:inputType="text"
+            android:theme="@style/EditTextStyle"
+            />
+
+        <EditText
+            android:id="@+id/privateKey"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:hint="개인키"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_corner"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_vpn_key_black_24dp"
+            android:fontFamily="@font/dunggeunmo"
+            android:inputType="text"
+            android:theme="@style/EditTextStyle"
+            />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="이더 잔액 : "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="@font/dunggeunmo"
+        android:layout_gravity="center"
+        android:id="@+id/ether"
+        />
+
+    <ImageButton
+        android:id="@+id/Complete"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@drawable/buttons_63"
+        android:src="@drawable/buttons_126"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+
+        />
+
+
+    </LinearLayout>
+</RelativeLayout>
+
+
+

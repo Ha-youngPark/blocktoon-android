@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="회원 가입"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/subtitle2"
+                android:fontFamily="@font/dunggeunmo"
+               />
+
+            <EditText
+                android:id="@+id/userId"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="아이디"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:background="@drawable/round_corner"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:maxLines="1"
+                android:drawableRight="@drawable/ic_face_black_24dp"
+                android:fontFamily="@font/dunggeunmo"
+                android:inputType="text"
+                android:theme="@style/EditTextStyle"
+                />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="비밀 번호"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:background="@drawable/round_corner"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:maxLines="1"
+                android:drawableRight="@drawable/ic_lock_black_24dp"
+                android:fontFamily="@font/dunggeunmo"
+                android:inputType="textPassword"
+                android:theme="@style/EditTextStyle"
+                />
+            <EditText
+                android:id="@+id/accountKey"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="계정 키"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:background="@drawable/round_corner"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:maxLines="1"
+                android:drawableRight="@drawable/ic_vpn_key_black_24dp"
+                android:fontFamily="@font/dunggeunmo"
+                android:inputType="text"
+                android:theme="@style/EditTextStyle"
+                />
+
+            <EditText
+                android:id="@+id/privateKey"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="개인 키"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:background="@drawable/round_corner"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:maxLines="1"
+                android:drawableRight="@drawable/ic_vpn_key_black_24dp"
+                android:fontFamily="@font/dunggeunmo"
+                android:inputType="text"
+                android:theme="@style/EditTextStyle"
+                />
+
+            <Button
+                android:id="@+id/Check"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/buttons_63"
+                android:text="아이디 중복 확인"
+                android:fontFamily="@font/dunggeunmo"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/Complete"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/buttons_126"
+                    android:background="@drawable/buttons_63"
+                    android:layout_gravity="center"
+                    android:padding="15dp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/Cancel"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/buttons_122"
+                    android:background="@drawable/buttons_63"
+                    android:layout_gravity="center"
+                    android:padding="15dp"
+                    android:layout_marginLeft="50dp"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+<!--
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccount">
+
+    <EditText
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="아이디"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toStartOf="@+id/Check"
+        app:layout_constraintHorizontal_bias="0.754"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.688" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="48dp"
+        android:ems="10"
+        android:hint="비밀번호"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/accountKey"
+        app:layout_constraintEnd_toStartOf="@+id/Check"
+        app:layout_constraintHorizontal_bias="0.754"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/privateKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="52dp"
+        android:ems="10"
+        android:hint="개인키"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Complete"
+        app:layout_constraintEnd_toStartOf="@+id/Check"
+        app:layout_constraintHorizontal_bias="0.754"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Check"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="중복확인"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="88dp"
+        android:text="완료"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Cancel"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="88dp"
+        android:text="취소"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/accountKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="계정키"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/privateKey"
+        app:layout_constraintEnd_toStartOf="@+id/Check"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>
+-->

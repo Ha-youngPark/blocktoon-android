@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/activity_login"
+    >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BLOCK TOON"
+            android:fontFamily="@font/dunggeunmo"
+            android:textSize="100sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            />
+
+            <EditText
+                android:id="@+id/userId"
+                android:textColor="@color/black"
+                android:background="@drawable/round_corner"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:hint="아이디"
+                android:textColorHint ="@color/black"
+                android:padding="10dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_face_black_24dp"
+                android:ems="10"
+                android:maxLines="1"
+                android:fontFamily="@font/dunggeunmo"
+                android:inputType="text"
+                android:theme="@style/EditTextStyle"
+
+
+                />
+
+            <EditText
+                android:id="@+id/password"
+                android:textColor="@color/black"
+                android:background="@drawable/round_corner"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:hint="비밀 번호"
+                android:textColorHint ="@color/black"
+                android:padding="10dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_lock_black_24dp"
+                android:ems="10"
+                android:maxLines="1"
+                android:fontFamily="@font/dunggeunmo"
+                android:inputType="textPassword"
+                android:theme="@style/EditTextStyle"/>
+
+
+            <Button
+                android:id="@+id/login"
+                android:text="로그인"
+                android:layout_marginTop="80dp"
+                android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttons_63"
+                android:fontFamily="@font/dunggeunmo"
+                android:textColor="@color/black"
+                />
+
+
+            <Button
+                android:id="@+id/newAccount"
+                android:text="회원 가입"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttons_63"
+                android:fontFamily="@font/dunggeunmo"
+                android:textColor="@color/black"/>
+
+
+        </LinearLayout>
+
+</RelativeLayout>
+
