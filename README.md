@@ -19,6 +19,8 @@ The goal of BlockToon is to improve existing Webtoon platforms.
 * Managing information and data using decentralized storage: There is no central server. Maintenance costs can be saved.
 * Uploading and managing are not imposed restrictions: It provides a flexible opportunity to the artists. 
 * Proving copyright without other 3rd parties: Data can not be deleted or modified in the public blockchain. It makes clear the ownership.  
+
+:movie_camera: <a href = "https://youtu.be/kUIFdpMKn84" target ="_blank">Demo Video</a>   
 <br/> 
 <p align = "center">
 <img src = "images\AboutBlockToon1.png" width = "180" height = "300">
