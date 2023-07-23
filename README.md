@@ -189,9 +189,9 @@ The RecyclerView improves the performance by recycling items. When we tried the 
 
 3. WebToon View   
 PhotoView and Picasso are used to get Webtoon images from the IPFS network and print the images.  <br/><br/>
-[The InterPlanetary File System (IPFS)](https://github.com/ipfs/ipfs) is decentralized decentralized file system for storing and accessing files, websites, applications, and data. In the IPFS network, nodes communicate Peer-to-Peer without a central server. The IPFS uses DHT routing like Bit torrent file exchange. If you register a file, you will have a hash value and will be able to access the data via the hash value and URL. Ethereum Swarm can be alternative for the IPFS. Large amounts of data can not be stored in blockchain and must be stored in external storage. We used the IPFS to save the Webtoon images by decentralized.  <br/><br/> 
+[The InterPlanetary File System (IPFS)](https://github.com/ipfs/ipfs) is decentralized file system for storing and accessing files, websites, applications, and data. In the IPFS network, nodes communicate Peer-to-Peer without a central server. The IPFS uses DHT routing like Bit torrent file exchange. If you register a file, you will have a hash value and will be able to access the data via the hash value and URL. Ethereum Swarm can be alternative for the IPFS. Large amounts of data can not be stored in blockchain and must be stored in external storage. We used the IPFS to save the Webtoon images by decentralized.  <br/><br/> 
 [PhotoView](https://github.com/Baseflow/PhotoView) library helps to zoom in and out of images on Android. Usually, to draw images, ImageView is used. The PhotoView makes it easier to implement zoom in comparison to ImageView.  <br/><br/>
-[Piscasso](https://github.com/square/picasso) is a library that easily handles the process of downloading images from the web and printing them to ImageView/PhotoView.
+[Picasso](https://github.com/square/picasso) is a library that easily handles the process of downloading images from the web and printing them to ImageView/PhotoView.
 This library is used to import images from an IPFS network through URL.
 Context, image URL, and the PhotoView that want to place the image are passed.   
 
